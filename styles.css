@@ -1,0 +1,352 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f6f6f6;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Container class for layout */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: #2c3e50;
+    color: #ffffff;
+    padding: 20px 0;
+    border-bottom: #34495e 3px solid;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    
+    font-size: 1.8rem;
+}
+
+/* Hero section styles */
+.hero {
+    background: url('images/bg7.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:390px 0;
+}
+
+.hero .logo {
+    font-size: 60px; 
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero .tagline {
+    font-size: 36px; 
+    margin-top: 10px; 
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero .btn {
+    background: #e74c3c;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    
+}
+
+.hero .btn:hover {
+    background: #c0392b;
+}
+
+
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature i {
+    font-size: 3em;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.feature h2 {
+    margin-bottom: 10px;
+}
+
+.feature p {
+    margin-bottom: 20px;
+}
+
+/* About section styles */
+.about {
+    padding: 20px;
+    background: #3498db;
+    color: #ffffff;
+    margin-top: 83px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.about h2 {
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Crafts section styles */
+.crafts {
+    margin-top: 20px;
+}
+
+.crafts h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.craft-item {
+    background: #ffffff;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.craft-item:nth-child(3n) {
+    margin-right: 20px;
+}
+
+.craft-item h3 {
+    margin-bottom: 10px;
+}
+
+.craft-item img {
+    width: 100%;
+    height: 320px;
+    border-radius: 5px;
+}
+
+.craft-item p {
+    font-size: 16px;
+}
+
+/* Customized Crafts section styles */
+.customized {
+    margin-top: 20px;
+}
+
+.customized h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.custom-craft {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.custom-craft p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.custom-craft form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.custom-craft button[type="submit"] {
+    text-align: center;
+    background-color: #e8491d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-craft button[type="submit"]:hover {
+    text-align: center;
+    background-color: #d13a1a;
+}
+
+/* Pricing section styles */
+.pricing {
+    margin-top: 20px;
+}
+
+.pricing h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.pricing-plan {
+    background: #ffffff;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.pricing-plan:nth-child(3n) {
+    margin-right:20px;
+}
+
+.pricing-plan h3 {
+    margin-bottom: 10px;
+}
+
+.pricing-plan p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.pricing-plan a.btn {
+    background-color: #e8491d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-plan a.btn:hover {
+    background-color: #d13a1a;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact button[type="submit"] {
+    background-color: #e8491d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #d13a1a;
+}
+
+/* Footer styles */
+footer {
+    background: #34495e;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.social-media a {
+    color: #ff6347;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ff4500;
+}
